@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p7"
+    tools:context=".MainActivity"
+
+    >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:textColor="#FAFAFA"
+            >
+
+                <TextView
+                    android:id="@+id/textTexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:background="@drawable/p6" />
+
+                <TextView
+                    android:layout_marginTop="20sp"
+                    android:id="@+id/textTexto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="DIGITE UM NÚMERO"
+                    android:textColor="#FAFAFA"
+                    android:textSize="20sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/editNumerocarta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="EX:0 à 45 "
+                    android:textColor="#000000"
+                    android:background="#fafafa"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="Consultardeckinicial"
+                    android:text="Consultar deck inicial(45)"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="Consultardeckestrutural"
+                    android:text="Consultar deck estrutural(41)"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="Consultardeckespecial"
+                    android:text="Consultar deck especial(4)"
+
+                    />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastrar Carta"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button1"
+                    android:text="listar"
+
+                    />
+                <TextView
+                    android:id="@+id/textResults"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#FAFAFA"
+
+
+                    />
+
+
+        </LinearLayout>
+</ScrollView>
